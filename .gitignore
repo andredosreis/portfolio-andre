@@ -1,0 +1,45 @@
+# ---- OS / Editor ----
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/
+.vscode/*
+!.vscode/extensions.json
+
+# ---- Node ----
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ---- Logs & Coverage ----
+logs/
+*.log
+*.log.*
+coverage/
+
+# ---- Next.js ----
+.next/
+.next/cache/
+out/
+
+# ---- Build Artifacts ----
+dist/
+build/
+
+# ---- TypeScript ----
+*.tsbuildinfo
+
+# ---- Env & Secrets ----
+.env
+.env.local
+.env.*.local
+# keep an example for onboarding
+!.env.example
+
+# ---- Tooling ----
+.vercel/
+.netlify/

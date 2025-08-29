@@ -1,0 +1,4 @@
+import * as React from 'react'
+import { cn } from '@/lib/utils'
+export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement>{variant?:'default'|'outline'|'ghost';size?:'default'|'icon';asChild?:boolean}
+export function Button({className,variant='default',size='default',asChild,...props}:ButtonProps & {children?:React.ReactNode}){const Comp:any=asChild?'a':'button';return(<Comp className={cn('inline-flex items-center justify-center whitespace-nowrap rounded-2xl text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary disabled:pointer-events-none disabled:opacity-50',variant==='default'&&'bg-primary text-primary-foreground hover:opacity-90',variant==='outline'&&'border border-border bg-background hover:bg-muted',variant==='ghost'&&'hover:bg-muted',size==='default'&&'h-10 px-4 py-2',size==='icon'&&'h-10 w-10',className)} {...props}/>)}

@@ -1,0 +1,1 @@
+export const SKILLS={Linguagens:['TypeScript','JavaScript','SQL','Python'],Frontend:['React','Next.js','Tailwind','Shadcn/UI'],Backend:['Node.js','Express','Prisma','MongoDB','PostgreSQL'],DevOps:['Docker','Vercel','Netlify'],IA:['OpenAI','n8n','RAG','Vetores'],} as const
