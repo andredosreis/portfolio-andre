@@ -69,6 +69,7 @@ function Hero() {
           <div className="mt-6 flex flex-wrap items-center gap-3">
             <Button asChild><a href="#projetos">Ver projetos <ArrowRight className="ml-2 h-4 w-4" /></a></Button>
             <Button variant="outline" asChild><a href="/cv-andre.pdf" download><Download className="mr-2 h-4 w-4" /> Download CV</a></Button>
+            
             <Socials />
           </div>
           <div className="mt-6 flex items-center gap-4 text-sm text-muted-foreground">
